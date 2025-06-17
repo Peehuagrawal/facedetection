@@ -5,6 +5,9 @@ import time
 cap= cv2.VideoCapture("faceimages/2.mp4")
 pTime=0
 
+mpFace= mp.solutions.face_detection
+mpDraw= mp.solutions.drawing_utils
+
 while True:
     success, img= cap.read()
     
@@ -12,4 +15,4 @@ while True:
     fps= 1/(cTime-pTime)
     cv2.putText(img, f'FPS:{int(fps)}', (28,78), cv2.FONT_HERSHEY_PLAIN,3,(255,0,0),2)
     cv2.imshow("Image", img)
-    cv2.waitKey(10)
+    cv2.waitKey(20)
