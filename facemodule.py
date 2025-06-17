@@ -43,11 +43,14 @@ class FaceDetector():
         cv2.line(img,(x,y),(x,y+3),(255,0,255),t)
         cv2.line(img,(x1,y),(x1-3,y),(255,0,255),t)
         cv2.line(img,(x1,y),(x1,y-3),(255,0,255),t)
+        cv2.line(img,(x1,y1),(x1+3,y1),(255,0,255),t)
+        cv2.line(img,(x1,y1),(x1,y1+3),(255,0,255),t)
+        cv2.line(img,(x,y1),(x-3,y1),(255,0,255),t)
+        cv2.line(img,(x,y1),(x,y1-3),(255,0,255),t)
         return img
    
-
 def main():
-    cap= cv2.VideoCapture("facevideos/2.mp4")
+    cap= cv2.VideoCapture("facevideos/5.mp4")
     pTime=0
     detector= FaceDetector()
     while True:
