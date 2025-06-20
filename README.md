@@ -57,7 +57,7 @@ pip install -r requirements.txt
 ### 3. Run the Example
 
 ```bash
-python facedetectionmodule.py
+python facemodule.py
 ```
 
 > Make sure your webcam is connected and accessible.
